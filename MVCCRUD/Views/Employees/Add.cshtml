@@ -1,0 +1,25 @@
+﻿@model MVCCRUD.Models.AddEmployeeViewModel;
+@{
+}
+<h1> Add Employee</h1>
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+        <div id="emailHelp" class="form-text">Give your name</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Surname</label>
+        <input type="text" class="form-control" asp-for="Surname">
+        <div id="emailHelp" class="form-text">This area for your second name</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Departman</label>
+        <input type="text" class="form-control" asp-for="Departman">
+        <div id="emailHelp" class="form-text">What is your departman?</div>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

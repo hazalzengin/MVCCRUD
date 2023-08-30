@@ -1,0 +1,26 @@
+﻿@model List<MVCCRUD.Models.Domain.Employee>
+@{
+}
+<h1>Employees</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Departman</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.Surname</td>
+                <td>@employee.Departman</td>
+                <td><a href="Employees/View/@employee.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
